@@ -1,5 +1,5 @@
 Feature: Buy a product
-
+@buyproduct
 Scenario: Buy a product
 Given the user is on saucelabs login page
 When the user fill username with "standard_user"

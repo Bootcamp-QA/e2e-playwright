@@ -34,6 +34,11 @@ With Visual Studio Code:
 ## Run Playwright Code Generator
 npx playwright codegen playwright.dev
 
+## Run specific scenario
+1. add tag to scenario in feature file
+2. Run command npm run test -- --tags '@tag' 
+3. Run in debug mode npm run debug -- --tags '@tag'  
+
 
 ##  Run tests on CI with github Actions:
 1. This test are running after each push in the github repository or can be run manually (access required)
