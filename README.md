@@ -39,6 +39,10 @@ npx playwright codegen playwright.dev
 2. Run command npm run test -- --tags '@tag' 
 3. Run in debug mode npm run debug -- --tags '@tag'  
 
+## DEBUG SPECIFIC SCENARIO
+1. npm run debug:desktop -- --tags '@buyproduct'
+2. npm run debug:mobile -- --tags '@buyproduct'
+
 
 ##  Run tests on CI with github Actions:
 1. This test are running after each push in the github repository or can be run manually (access required)
