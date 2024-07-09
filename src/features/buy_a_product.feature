@@ -15,7 +15,7 @@ Then the user should see product "Sauce Labs Backpack" with total price "32.39"
 And the user press finish
 Then the user should see the buy complete message "Thank you for your order"
 
-@buyempty
+@buyempty @bug-1234
 Scenario: Buy with empty cart
 Given the user is on saucelabs login page
 When the user fill username with "standard_user"
