@@ -4,9 +4,11 @@ import { expect } from "playwright/test";
 
 Given('the user is on contactList page', async function () {
     await this.page.goto('https://thinking-tester-contact-list.herokuapp.com/contactList');
+    await this.context.clearCookies();
   })
 
 When('the user login with user {string} and password {string}',  async function (user: string, password:string) {
+    await this.page.getByRole('button', { name: 'Logout' }).click();
     await this.page.getByPlaceholder('Email').fill('reyes2@gmail.com');
     await this.page.getByPlaceholder('Password').fill('password');
     await this.page.getByRole('button', { name: 'Submit' }).click();
