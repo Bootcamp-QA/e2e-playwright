@@ -43,4 +43,8 @@ Then('the user should see the buy complete message {string}',async function  (me
   await expect(this.page.locator('[data-test="complete-header"]')).toContainText(message);
 })
 
+Then('the user should not see the buy complete message {string}',async function  (message: string) {
+  await expect(this.page.locator('[data-test="complete-header"]')).not.toContainText(message);
+})
+
 
