@@ -3,10 +3,7 @@
 > Typescript and Playwright with Cucumber e2e testing project.
 
 ### 💻 Description
-E2e tests for https://bootcamp-qa.com
-
-Covered Features:
-- Visit Home Page
+E2e tests examples for multiple webpages.
 
 
 - ## 💻 Pre-requisites
